@@ -2,6 +2,11 @@
   "name": "advent-of-code-2025",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun --watch runner.ts",
+    "day": "bun runner.ts",
+    "watch": "bun --watch runner.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
