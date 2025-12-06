@@ -13,8 +13,11 @@ bun install
 ### Run a specific day and part
 
 ```bash
-# Run day 1 part A
+# Run day 1 part A with real input
 bun run day 1 a
+
+# Run day 1 part A with example input
+bun run day 1 a example
 
 # Run day 1 part B
 bun run day 1 b
@@ -26,8 +29,11 @@ bun run day 15 a
 ### Watch mode (auto-rerun on file changes)
 
 ```bash
-# Watch and run day 1 part A
+# Watch and run day 1 part A with real input
 bun run watch 1 a
+
+# Watch and run day 1 part A with example input
+bun run watch 1 a example
 
 # Watch and run day 5 part B
 bun run watch 5 b
@@ -57,6 +63,6 @@ days/
 
 ## Tips
 
-- Use `example.txt` to test your solution with the example data
-- Modify `readInput()` call in your solution to use `"example.txt"` for testing
+- Add `example` as the third argument to test with example data: `bun run day 1 a example`
+- The runner will automatically use the correct input file based on your command
 - The `utils.ts` file contains helper functions for reading input files
