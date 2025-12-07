@@ -2,8 +2,8 @@ import { readInput } from "../../utils";
 
 const input = await readInput(import.meta.dir);
 
-// Part A solution
-function solvePartA(rawData: string): number {
+// Part B solution
+function solvePartB(rawData: string): number {
   const cleanLines = rawData.replace(/\r/g, "") || "";
 
   const lines = cleanLines.split("\n").at(0) || "";
@@ -43,7 +43,7 @@ function solvePartA(rawData: string): number {
   return count;
 }
 
-const answer = solvePartA(input);
-console.log("Part A:", answer);
+const answer = solvePartB(input);
+console.log("Part B:", answer);
 
-export { solvePartA };
+export { solvePartB };

@@ -2,15 +2,13 @@ import { readInput } from "../../utils";
 
 const input = await readInput(import.meta.dir);
 
-// Part A solution
-function solvePartA(data: string): number {
+// Part B solution
+function solvePartB(data: string): number {
   const lines = data.trim().split("\n");
 
   // Your solution here
 
   const start = 50;
-  const min = 0;
-  const max = 99;
   let curr = start;
 
   const getMomentum = (str = "L123") => {
@@ -49,7 +47,7 @@ function solvePartA(data: string): number {
   return counter;
 }
 
-const answer = solvePartA(input);
-console.log("Part A:", answer);
+const answer = solvePartB(input);
+console.log("Part B:", answer);
 
-export { solvePartA };
+export { solvePartB };
