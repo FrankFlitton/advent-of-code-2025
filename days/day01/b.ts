@@ -43,8 +43,7 @@ function solvePartA(data: string): number {
 
     const { direction, distance } = getMomentum(d?.trim());
 
-    const newPosition = doRotate(curr, direction, distance);
-    // if (newPosition === 0) counter++;
+    doRotate(curr, direction, distance);
   }
 
   return counter;
